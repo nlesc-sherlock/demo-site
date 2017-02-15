@@ -2,7 +2,21 @@ version: "3"
 
 services:
         web:
-          image: nlesc/demo-site
+          image: nlesc/sherlock-demo-site
+          #          depends_on:
+          #                  - timeline
+          #                  - service-swarm-viz
+          ports:
+                  - "80:80"
 
-        timeline:
-          image: nlesc/timeline
+                    #        timeline:
+
+                    #          image: nlesc/timeline
+
+                    #        swarm-viz:
+          #exports port 8080
+          #          image: manomarks/visualizer
+
+                    #          volumes:
+                    #                 - /var/run/docker.sock:/var/run/docker.sock 
+
