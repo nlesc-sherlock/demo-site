@@ -3,8 +3,6 @@ version: "3"
 services:
         web:
           image: nlesc/demo-site
-          ports:
-           - "80:80"
 
         timeline:
           image: nlesc/timeline
