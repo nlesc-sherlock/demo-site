@@ -7,7 +7,6 @@ services:
       - /data/shared/cluster-analysis/data/combined:/usr/share/nginx/html/webdata
     depends_on:
       - deeplearning-viz
-        #                  - service-swarm-viz
     ports:
       - "80:80"
 
