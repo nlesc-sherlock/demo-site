@@ -13,6 +13,9 @@ services:
 
   deeplearning-viz:
     image: nlesc/sherlock-deeplearning-viz
+    ports:
+      - "3000:3000"
+
 
         #        timeline:
 
