@@ -4,7 +4,7 @@ services:
   web:
     image: nlesc/sherlock-demo-site
     volumes:
-      - deepdivedata://usr/share/nginx/html/deepdivedata
+      - /data/shared/cluster-analysis/data/combined:/usr/share/nginx/html/webdata
     #          depends_on:
     #                  - timeline
     #                  - service-swarm-viz
@@ -21,6 +21,3 @@ services:
 
         #          volumes:
         #                 - /var/run/docker.sock:/var/run/docker.sock
-
-volumes:
-  deepdivedata: /data/shared/cluster-analysis/data/combined
