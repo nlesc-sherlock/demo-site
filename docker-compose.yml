@@ -5,11 +5,15 @@ services:
     image: nlesc/sherlock-demo-site
     volumes:
       - /data/shared/cluster-analysis/data/combined:/usr/share/nginx/html/webdata
-    #          depends_on:
-    #                  - timeline
-    #                  - service-swarm-viz
+    depends_on:
+      - deeplearning-viz
+        #                  - service-swarm-viz
     ports:
       - "80:80"
+
+
+  deeplearning-viz:
+    image: nlesc/sherlock-deeplearning-viz
 
         #        timeline:
 
